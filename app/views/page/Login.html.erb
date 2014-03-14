@@ -1,7 +1,27 @@
-<h1>Page#Login</h1>
-<p>Find me in app/views/page/Login.html.erb</p>
-<p>email address<%= email_field(:user, :address) %></p>
-<p>    passoword<%= password_field_tag(:password) %>
-<%=button_tag(type: 'LoginButton') do
-  content_tag(:strong, 'Login!')
-end%></p>
+<head>
+    <style type="text/css">
+        masthead{
+            width:100%;
+        }
+    </style>
+</head>
+<div class="masthead">
+<%= image_tag('Logo_IDEA_2.png') %>
+</div>
+<form class="form-inline" role="form" bgcolor="black">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword2">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Sign in</button>
+
+</form>
