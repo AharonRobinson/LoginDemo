@@ -1,0 +1,7 @@
+<h1>Page#Login</h1>
+<p>Find me in app/views/page/Login.html.erb</p>
+<p>email address<%= email_field(:user, :address) %></p>
+<p>    passoword<%= password_field_tag(:password) %>
+<%=button_tag(type: 'LoginButton') do
+  content_tag(:strong, 'Login!')
+end%></p>
